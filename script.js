@@ -65,4 +65,40 @@ console.log(birthdate);
 
 // this auomaticaly use var as declairing 
 
+//Operators
+
+//Arithmetic Operators Example :- Addition,Subtraction,Multiplication,Exponentiation ,Division,Modulus,Increment,Decrement
+
+// Addition operator(+)
+const x1 = 100;
+const y1 =20;
+const sum1 = x1 + y1;                       //addition
+const sub1 = x1 - y1;                       //substraction
+const mul1 = x1 * y1;                         //multiplication 
+const exp1 = x1 ** y1;                        //Exponentiation
+const div = x1 / y1;                        //Division
+const mod = x1 % y1;                        //Modulus - remainder
+
+let num = 5;                                //increment              
+num++;                                      // 6
+let numb = 5;                               //decrement 
+num--;                                      //4
+
+console.log("sum of the x & y is",sum1 +'.'+ "sub of x & y is ",sub1,+'.'+ "mul of x & y is ",mul1);
+
+
+// Assignment Operator
+
+let x2 = 10 ; //10
+x2 += 10;       //20
+x2 *= 4;        // x2 = x*4 = 80
+x2++;           // x2=x+1 =81
+x2--;           // x2=x+1 =80
+
+
+//comparisonn operator: - < , > , <= , >=
+let myage = 20;
+let hisage = 25;
+console.log(myage<hisage)       //true
+console.log(myage>hisage)       //false
 
