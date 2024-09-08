@@ -15,3 +15,23 @@ console.log(newjohns)
 console.log("string with \n\
 mulitple\n\
 lines of code!!")
+
+//--------------Conditions-------------=if/else-------------------------
+const age = 15;
+if (age>=18) {
+    console.log("you can take licence!!")
+}else{
+    console.log(`after ${18-age} years you can take licence!!`)
+}
+
+
+// ------------------------------------------------------------------------
+const birthYear = 1998;
+
+let centuary;               //need to define let outside  
+if (birthYear <= 2000){
+    centuary = 20;
+}else{
+    centuary =21;
+}
+console.log(centuary)
