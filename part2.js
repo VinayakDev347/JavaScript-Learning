@@ -82,3 +82,21 @@ const yearUntilRetirement = (birthYear,name) => {
 
 console.log(yearUntilRetirement(1991,'johny'));     //johny retires in 32 years!!
 console.log(yearUntilRetirement(2001,'viknu'));     //viknu retires in 42 years!!
+
+//-----------------------------------------------------------------------------------
+
+//---------here function call another function -------------------
+const cutPieces = function(fruit){
+  return fruit * 4;
+}
+
+const fruitProcessor = function(apple,orange){
+  const applePiece = cutPieces(apple);
+  const orangePiece = cutPieces(orange);
+
+  const juice = `Juice with ${applePiece} piece of apples and ${orangePiece} piece of oranges.`;
+  return juice;
+};
+
+console.log(fruitProcessor(2,3));           //Juice with 8 piece of apples and 12 piece of oranges.
+console.log(fruitProcessor(3,5));           //Juice with 12 piece of apples and 20 piece of oranges.
