@@ -152,3 +152,17 @@ const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
 console.log(jonas);                              // ['Jonas', 'Schmedtmann', 46, 'teacher', Array(3)]
 console.log(jonas.length);                       //5
 //---------------------------------------------------------------------------
+
+// Exercise
+const calcAge = function (birthYeah) {
+  return 2037 - birthYeah;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);                   //2037 - 1990
+const age2 = calcAge(years[1]);                   //2037 - 1967
+const age3 = calcAge(years[years.length - 1]);    //2037 - 2018
+console.log(age1, age2, age3);                    //47 70 19
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);                                //(3) [47, 70, 19]
