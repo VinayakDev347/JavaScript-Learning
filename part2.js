@@ -166,3 +166,40 @@ console.log(age1, age2, age3);                    //47 70 19
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);                                //(3) [47, 70, 19]
+
+//-------------------------------------------------------
+// Basic Array Operations (Methods)
+const friends = ['Michael', 'Steven', 'Peter'];       
+
+
+// Add elements
+const newLength = friends.push('Jay');
+console.log(friends);                             // ['Michael', 'Steven', 'Peter', 'Jay']
+console.log(newLength);                           //4
+
+friends.unshift('John');                          //['John', 'Michael', 'Steven', 'Peter', 'Jay']
+console.log(friends);                             //5
+
+// Remove elements
+friends.pop();                                    // remove Last
+const popped = friends.pop();                     
+console.log(popped);                              // peter 
+console.log(friends);                             //['John', 'Michael', 'Steven']
+
+friends.shift();                                   //remove First
+console.log(friends);                              //['Michael', 'Steven']
+
+console.log(friends.indexOf('Steven'));           //1
+console.log(friends.indexOf('Bob'));              //-1
+
+friends.push(23);
+console.log(friends.includes('Steven'));          //True - if there 
+console.log(friends.includes('Bob'));             //False - if not there
+console.log(friends.includes(23));                //True,if we push '23' as string then its false
+
+if (friends.includes('Steven')) {
+  console.log('You have a friend called Steven'); //You have a friend called Steven
+}
+
+
+//////////---------------------------------------------------------------------
